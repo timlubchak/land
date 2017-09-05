@@ -1,3 +1,7 @@
+body{
+    width: 100%;
+
+}
 .nav{
     width:80%;
     height:40px;
@@ -27,22 +31,28 @@
 .nav ul li a:hover{
     color: rgba(255, 0, 114, 0.88);
 }
-.first{
+.first0{
     color:red !important;
     font-size:20px;
 }
-header{
+.header{
     position: fixed;
     margin: -18px 0 0 0;
-    padding: 10px;
+    padding: 10px ;
     background: #d0d5ff;
     width:100%;
+    display: flex;
+    align-content: space-around;
+    flex-wrap: wrap;
+    z-index:299;
 }
 /*----------------------first----------------------*/
 .main{
     background:red;
     padding:40px;
     height:405px;
+    display: flex;
+    flex-direction: column;
 }
 .first-block{
     float: left;
@@ -68,4 +78,297 @@ header{
 h1{
     font-size:32px;
     color:#fff;
+}
+.first-block p{
+    font-size: 18px;
+    line-height: 23px;
+    color: #cea4a4;
+    width: 78%;
+}
+/*----------------about-------------*/
+.about{
+    height: 348px;
+    background: white;
+    padding: 72px;
+    display: flex;
+    align-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.about1{
+    width:50%;
+    float: left;
+}
+.about h1{
+    font-size:32px;
+    color:#000;
+    text-align:center;
+}
+.about p{
+    font-size: 18px;
+    line-height: 23px;
+    color: #635f5f;
+    width: 78%;
+}
+.about2{
+    width: 48%;
+    float: left;
+    margin: 0 auto;
+    display: block;
+    padding: 44px 3px;
+}
+.about-img{
+    background: url(../img/of.png);
+    width: 298px;
+    height: 278px;
+    text-align: center;
+    display: block;
+    background-size: 102%;
+    margin: 0 0 0 38%;
+}
+/*----------------services-----------------*/
+.services{
+    padding: 48px;
+    background: gainsboro;
+}
+.services h1{
+    font-size: 38px;
+    color: #000;
+    text-align: center;
+}
+.ser-block{
+   // align-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+    display: flex;
+}
+.ser1{
+    padding: 20px;
+    border-right: 1px solid #000;
+    width: 29%;
+    margin: 5px;
+}
+.ser1:nth-child(3){
+    border-right:none;
+}
+.ser1:nth-child(7){
+    border-right:none;
+}
+.line{
+    border-bottom: 1px solid #000;
+    width: 100%;
+}
+.ser-img{
+    background: url(../img/android-6-128.ico)center no-repeat;
+    width: 120px;
+    height: 120px;
+    border: 1px solid red;
+    border-radius: 60px;
+    padding: -27px 0 8px 0;
+    background-size: 72%;
+    margin: 0 auto;
+}
+.ser-img1{
+    background: url(../img/apple.ico)center no-repeat;
+    width: 120px;
+    height: 120px;
+    border: 1px solid red;
+    border-radius: 60px;
+    padding: -27px 0 8px 0;
+    background-size: 72%;
+    margin: 0 auto;
+}
+.ser-img2{
+    background: url(../img/youtube.ico)center no-repeat;
+    width: 120px;
+    height: 120px;
+    border: 1px solid red;
+    border-radius: 60px;
+    padding: -27px 0 8px 0;
+    background-size: 72%;
+    margin: 0 auto;
+}
+.ser-img3{
+    background: url(../img/dropbox-256.ico)center no-repeat;
+    width: 120px;
+    height: 120px;
+    border: 1px solid red;
+    border-radius: 60px;
+    padding: -27px 0 8px 0;
+    background-size: 72%;
+    margin: 0 auto;
+}.ser-img4{
+     background: url(../img/x.ico)center no-repeat;
+     width: 120px;
+     height: 120px;
+     border: 1px solid red;
+     border-radius: 60px;
+     padding: -27px 0 8px 0;
+     background-size: 72%;
+     margin: 0 auto;
+ }
+.ser-img5{
+    background: url(../img/pople.ico)center no-repeat;
+    width: 120px;
+    height: 120px;
+    border: 1px solid red;
+    border-radius: 60px;
+    padding: -27px 0 8px 0;
+    background-size: 72%;
+    margin: 0 auto;
+}
+
+
+.ser1{
+  text-align:center;
+}
+.ser-block{
+ padding:0 80px;
+}
+/*---------------tabs-----------------*/
+#tabs{
+    text-align: center;
+    margin: 30px 0;
+}
+  .first {
+      color: red !important;
+      border: 1px solid red !important;
+}
+#tabs .tab{
+    display: inline-block;
+    color:gray;
+    margin:0 4px;
+    padding: 15px;
+    cursor: pointer;
+    border: 2px solid lightgray;
+    border-radius: 4px 4px ;
+    position: relative;
+    bottom: -1px;
+    z-index: 22;
+    text-align: center;
+}
+#tabs .tabContent{
+    padding:20px;
+    height:40px;
+    border-radius:0 0 4px 4px;
+    margin:0 auto;
+    position:relative;
+    top:60px;
+}
+.hide{
+    display:none
+}
+.show{
+    display:block;
+}
+.red{
+    background:red;
+}
+.gray{
+    background:gray;
+}
+/*------------portfolio------------------*/
+.portfolio{
+    padding:20px 100px;
+    height:640px;
+}
+.im1{
+    width:300px;
+    float:left;
+    height:200px;
+}
+.portfolio h1{
+    font-size:38px;
+    color:#000;
+    text-align: center;
+}
+/*----------clients----------------------*/
+.clients{
+    padding:40px 100px;
+    background: #fff;
+    display:block;
+    background:red;
+}
+.clients ul{
+    margin:0 auto;
+}
+.clients ul li{
+    display: inline-block;
+    padding: 20px 68px;
+    color: #fff;
+    font-size: 32px;
+}
+ h1{
+    font-size:38px;
+    color:#000;
+    text-align: center;
+}
+ /*--------------------team-------------------*/
+.team{
+    background: #fff;
+    padding: 20px 40px;
+    height: 500px;
+}
+p{
+    text-align: center;
+    color:gray;
+}
+.ser2{
+    padding: 20px;
+    width: 29%;
+    margin: 5px;
+    float: left;
+}
+.ser2 img{
+    display: block;
+    margin: 0 auto;
+}
+.ser2 h3{
+    text-align:center;
+}
+/*---------------contact us-----------------------*/
+.contact-us{
+    padding:20px 150px;
+    height:400px;
+    background:#000;
+    display: block;
+}
+.contact-us h1{
+    color:#fff;
+    font-weight:100;
+}
+.form{
+    width: 37%;
+    padding: 20px;
+    display: block;
+    margin: 0 auto;
+}
+input[type=text]{
+     font-size: 25px;
+     padding: 8px 89px;
+     color: lightblue;
+     border: none;
+     border-radius: 6px;
+ }
+input[type=email]{
+    font-size: 25px;
+    padding: 8px 89px;
+    color: lightblue;
+    border: none;
+    border-radius: 6px;
+}
+input[type=textarea]{
+    font-size: 25px;
+    padding: 8px 89px;
+    color: lightblue;
+    border: none;
+    border-radius: 6px;
+}
+input[type=submit]{
+    font-size: 25px;
+    padding: 9px 189px;
+    color: lightblue;
+    background: red;
+    border: none;
+    border-radius: 6px;
 }
