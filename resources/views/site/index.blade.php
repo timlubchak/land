@@ -9,3 +9,4 @@
 @section('content')
     @include('site.content')
 @endsection
+//it's main
