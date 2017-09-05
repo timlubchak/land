@@ -1,0 +1,71 @@
+.nav{
+    width:80%;
+    height:40px;
+    float: left;
+}
+.nav1{
+    float: left;
+    background: url(../img/logo1.png)no-repeat;
+    width: 286px;
+    height: 88px;
+    background-size: 97%;
+}
+.nav ul{
+    margin: 26px 0 0 0;
+    padding: 5px;
+    text-align: center;
+}
+.nav ul li{
+    display: inline-flex;
+}
+.nav ul li a{
+    text-decoration: none;
+    padding:5px 10px;
+    color: #0c6780;
+    font-size:20px;
+}
+.nav ul li a:hover{
+    color: rgba(255, 0, 114, 0.88);
+}
+.first{
+    color:red !important;
+    font-size:20px;
+}
+header{
+    position: fixed;
+    margin: -18px 0 0 0;
+    padding: 10px;
+    background: #d0d5ff;
+    width:100%;
+}
+/*----------------------first----------------------*/
+.main{
+    background:red;
+    padding:40px;
+    height:405px;
+}
+.first-block{
+    float: left;
+    padding:30px;
+    width:50%;
+    margin:88px 0 0 0;
+}
+.second-block{
+    float: left;
+    margin: 88px 0 0 0;
+    background: url(../img/tel.png)no-repeat;
+    width: 40%;
+    height: 356px;
+    background-size: 102%;
+}
+#btn{
+    padding:8px 20px;
+    font-size:18px;
+    color:#fff;
+    border:1px solid red;
+    border-radius:6px;
+}
+h1{
+    font-size:32px;
+    color:#fff;
+}

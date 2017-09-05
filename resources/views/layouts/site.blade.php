@@ -7,7 +7,7 @@
     <title>Bootstrap 101 Template</title>
 
     <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{asset('css/style.css')}}" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -18,15 +18,41 @@
 </head>
 <body>
 <header>
-  nav
+    <div class="nav1">
+    </div>
+  <div class="nav">
+      <ul>
+          <li><a class="first" href="">HOME</a> </li>
+          <li><a href="">ABOUT US</a> </li>
+          <li><a href="">SERVICES</a> </li>
+          <li><a href="">PORTFOLIO</a> </li>
+          <li><a href="">CLIENTS</a> </li>
+          <li><a href="">TEAM</a> </li>
+          <li><a href="">CONTACT</a> </li>
+
+      </ul>
+  </div>
 </header>
-<main>
-    content
-</main>
+<div class="main">
+    <div class="first-block">
+       <h1>WE CREATE AWESOME</h1>
+        <h1>WEB TEMPLATES</h1>
+        <p>
+            Lorem ipsum dolor sit amet, per ei tamquam suavitate neglegentur,
+            ut duo fugit adipiscing assueverit. Perpetua appellantur ne vim,
+            est in harum intellegat. Iriure definiebas nec ei, has et modus vituperatoribus.
+            Quo eirmod perpetua salutatus ei, ut modo consul ius.
+        </p>
+        <button id="btn">READ MORE</button>
+    </div>
+    <div class="second-block">
+
+    </div>
+</div>
 <footer>
-    footer
+
 </footer>
-<h1>Привет, мир!</h1>
+
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
