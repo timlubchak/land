@@ -372,3 +372,14 @@ input[type=submit]{
     border: none;
     border-radius: 6px;
 }
+footer{
+    height:50px;
+    padding:20px;
+    border-top:4px solid #fff;
+    background:#000;
+}
+footer p{
+    text-align:center;
+    font-size:16px;
+    color:#fff;
+}
