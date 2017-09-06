@@ -50,9 +50,8 @@ body{
 .main{
     background:red;
     padding:40px;
-    height:405px;
-    display: flex;
-    flex-direction: column;
+    height:505px;
+    display: block;
 }
 .first-block{
     float: left;
@@ -63,11 +62,18 @@ body{
 .second-block{
     float: left;
     margin: 88px 0 0 0;
-    background: url(../img/tel.png)no-repeat;
-    width: 40%;
-    height: 356px;
-    background-size: 102%;
+    display: block;
+    width:40%;
+    height:350px;
+
 }
+.second-block img{
+
+    width: 80%;
+    height: 356px;
+    background-size: 100%;
+}
+ 
 #btn{
     padding:8px 20px;
     font-size:18px;
@@ -117,8 +123,7 @@ h1{
     display: block;
     padding: 44px 3px;
 }
-.about-img{
-    background: url(../img/of.png);
+.about-img img{
     width: 298px;
     height: 278px;
     text-align: center;

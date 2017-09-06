@@ -1,47 +1,52 @@
 
-<div class="main">
-    <div class="first-block">
-        <h1>WE CREATE AWESOME</h1>
-        <h1>WEB TEMPLATES</h1>
-        <p>
-            Lorem ipsum dolor sit amet, per ei tamquam suavitate neglegentur,
-            ut duo fugit adipiscing assueverit. Perpetua appellantur ne vim,
-            est in harum intellegat. Iriure definiebas nec ei, has et modus vituperatoribus.
-            Quo eirmod perpetua salutatus ei, ut modo consul ius.
-        </p>
-        <button id="btn">READ MORE</button>
-    </div>
-    <div class="second-block">
+@if(isset($pages) && is_object($pages))
 
-    </div>
-</div>
-<div class="about">
-    <div class="about1">
-        <h1>ABOUT AS</h1>
+@foreach($pages as $k=>$page)
+    @if($k%2 == 0)
+        <div class="main" id="home">
 
-        <p>
-            Lorem ipsum dolor sit amet, per ei tamquam suavitate neglegentur,
-            ut duo fugit adipiscing assueverit. Perpetua appellantur ne vim,
-            est in harum intellegat. Iriure definiebas nec ei, has et modus vituperatoribus.
-            Quo eirmod perpetua salutatus ei, ut modo consul ius.
-
-        </p>
-        <p>
-            Lorem ipsum dolor sit amet, per ei tamquam suavitate neglegentur,
-            ut duo fugit adipiscing assueverit. Perpetua appellantur ne vim,
-            est in harum intellegat. Iriure definiebas nec ei, has et modus vituperatoribus.
-            Quo eirmod perpetua salutatus ei, ut modo consul ius.
-
-        </p>
-        <button id="btn">READ MORE</button>
-    </div>
-    <div class="about2">
-        <div class="about-img">
-
+            <div class="first-block">
+                <h1>WE CREATE AWESOME</h1>
+                <h1>WEB TEMPLATES</h1>
+                <p>
+                    {{ $page->text }}
+                </p>
+                <button id="btn">READ MORE</button>
+            </div>
+            <div class="second-block">
+                {!! Html::image('img/'.$page->img) !!}
+            </div>
         </div>
-    </div>
-</div>
-<div class="services">
+    @else
+        <div class="about" id="about-us">
+            <div class="about1">
+                <h1>{{ $page->name }}</h1>
+
+                <p>
+
+                    {{ $page->text }}
+
+                </p>
+                <p>
+                    {{ $page->text }}
+
+                </p>
+                <button id="btn">READ MORE</button>
+            </div>
+            <div class="about2">
+                <div class="about-img">
+                   {!! Html::image('img/'.$page->img) !!}
+                </div>
+            </div>
+        </div>
+    @endif
+@endforeach
+
+
+@endif
+
+
+<div class="services" id="services">
     <h1>SERVICES</h1>
     <div class="ser-block">
         <div class="ser1">
@@ -90,7 +95,7 @@
     </div>
 
 </div>
-<div class="portfolio">
+<div class="portfolio" id="portfolio">
     <h1>PORTFOLIO</h1>
     <div id="tabs">
         <div class="tab first">ALL</div>
@@ -150,7 +155,7 @@
     </div>
 </div>
 <h1>CLIENTS</h1>
-<div class="clients">
+<div class="clients" id="clients">
 
     <ul>
         <li><img src="">iPHONE</li>
@@ -159,7 +164,7 @@
         <li><img src="">MICROSOFT</li>
     </ul>
 </div>
-<div class="team">
+<div class="team" id="team">
     <h1>TEAM</h1>
     <p>Lorem ipsum dolor sit amet, per ei tamquam suavitate neglegentur</p>
     <div class="team-img">
@@ -189,7 +194,7 @@
     </div>
 
 </div>
-<div class="contact-us">
+<div class="contact-us" id="contact">
     <h1>CONTACT US</h1>
     <form class="form">
         <input type="text" name="name" placeholder="name.."><br><br>
