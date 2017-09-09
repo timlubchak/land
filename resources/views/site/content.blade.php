@@ -46,55 +46,74 @@
 @endif
 
 
-<div class="services" id="services">
-    <h1>SERVICES</h1>
-    <div class="ser-block">
-        <div class="ser1">
-            <div class="ser-img"></div>
-            <h3>ANDROID</h3>
-            <p> Lorem ipsum dolor sit amet, per ei tamquam suavitate neglegentur,
-                ut duo fugit adipiscing assueverit. Perpetua appellantur ne vim,
-                est in harum intellegat.</p>
-        </div>
-        <div class="ser1">
-            <div class="ser-img1"></div>
-            <h3>APPLE IOS</h3>
-            <p> Lorem ipsum dolor sit amet, per ei tamquam suavitate neglegentur,
-                ut duo fugit adipiscing assueverit. Perpetua appellantur ne vim,
-                est in harum intellegat.</p>
-        </div>
-        <div class="ser1">
-            <div class="ser-img2"></div>
-            <h3>YOUTUBE</h3>
-            <p> Lorem ipsum dolor sit amet, per ei tamquam suavitate neglegentur,
-                ut duo fugit adipiscing assueverit. Perpetua appellantur ne vim,
-                est in harum intellegat.</p>
-        </div>
-        <div class="line"></div>
-        <div class="ser1">
-            <div class="ser-img3"></div>
-            <h3>DROPBOX</h3>
-            <p> Lorem ipsum dolor sit amet, per ei tamquam suavitate neglegentur,
-                ut duo fugit adipiscing assueverit. Perpetua appellantur ne vim,
-                est in harum intellegat.</p>
-        </div>
-        <div class="ser1">
-            <div class="ser-img4"></div>
-            <h3>EXER</h3>
-            <p> Lorem ipsum dolor sit amet, per ei tamquam suavitate neglegentur,
-                ut duo fugit adipiscing assueverit. Perpetua appellantur ne vim,
-                est in harum intellegat.</p>
-        </div>
-        <div class="ser1">
-            <div class="ser-img5"></div>
-            <h3>PEOPLE</h3>
-            <p> Lorem ipsum dolor sit amet, per ei tamquam suavitate neglegentur,
-                ut duo fugit adipiscing assueverit. Perpetua appellantur ne vim,
-                est in harum intellegat.</p>
-        </div>
+    <div class="services" id="services">
+        <h1>SERVICES</h1>
+        @if (isset($services)&& is_object($services))
+
+            @foreach($services as $k=>$service)
+                @if($k == 3 || $k%3 ==0)
+                    <div class="line"></div>
+                @endif
+
+                    <div class="ser-block">
+                        <div class="ser1">
+                            <div class="ser-img">{!! Html::image('img/'.$service->icon) !!}</div>
+                            <h3>{{$service->name}}</h3>
+                            <p> {{ $service->text }}</p>
+                        </div>
+                    </div>
+
+            @endforeach
+        {{--<div class="ser-block">--}}
+            {{--<div class="ser1">--}}
+                {{--<div class="ser-img"></div>--}}
+                {{--<h3>ANDROID</h3>--}}
+                {{--<p> Lorem ipsum dolor sit amet, per ei tamquam suavitate neglegentur,--}}
+                    {{--ut duo fugit adipiscing assueverit. Perpetua appellantur ne vim,--}}
+                    {{--est in harum intellegat.</p>--}}
+            {{--</div>--}}
+            {{--<div class="ser1">--}}
+                {{--<div class="ser-img1"></div>--}}
+                {{--<h3>APPLE IOS</h3>--}}
+                {{--<p> Lorem ipsum dolor sit amet, per ei tamquam suavitate neglegentur,--}}
+                    {{--ut duo fugit adipiscing assueverit. Perpetua appellantur ne vim,--}}
+                    {{--est in harum intellegat.</p>--}}
+            {{--</div>--}}
+            {{--<div class="ser1">--}}
+                {{--<div class="ser-img2"></div>--}}
+                {{--<h3>YOUTUBE</h3>--}}
+                {{--<p> Lorem ipsum dolor sit amet, per ei tamquam suavitate neglegentur,--}}
+                    {{--ut duo fugit adipiscing assueverit. Perpetua appellantur ne vim,--}}
+                    {{--est in harum intellegat.</p>--}}
+            {{--</div>--}}
+            {{--<div class="line"></div>--}}
+            {{--<div class="ser1">--}}
+                {{--<div class="ser-img3"></div>--}}
+                {{--<h3>DROPBOX</h3>--}}
+                {{--<p> Lorem ipsum dolor sit amet, per ei tamquam suavitate neglegentur,--}}
+                    {{--ut duo fugit adipiscing assueverit. Perpetua appellantur ne vim,--}}
+                    {{--est in harum intellegat.</p>--}}
+            {{--</div>--}}
+            {{--<div class="ser1">--}}
+                {{--<div class="ser-img4"></div>--}}
+                {{--<h3>EXER</h3>--}}
+                {{--<p> Lorem ipsum dolor sit amet, per ei tamquam suavitate neglegentur,--}}
+                    {{--ut duo fugit adipiscing assueverit. Perpetua appellantur ne vim,--}}
+                    {{--est in harum intellegat.</p>--}}
+            {{--</div>--}}
+            {{--<div class="ser1">--}}
+                {{--<div class="ser-img5"></div>--}}
+                {{--<h3>PEOPLE</h3>--}}
+                {{--<p> Lorem ipsum dolor sit amet, per ei tamquam suavitate neglegentur,--}}
+                    {{--ut duo fugit adipiscing assueverit. Perpetua appellantur ne vim,--}}
+                    {{--est in harum intellegat.</p>--}}
+            {{--</div>--}}
+        {{--</div>--}}
+
     </div>
 
-</div>
+@endif
+
 <div class="portfolio" id="portfolio">
     <h1>PORTFOLIO</h1>
     <div id="tabs">
