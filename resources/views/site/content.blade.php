@@ -82,17 +82,34 @@
 
 <div class="portfolio" id="portfolio">
     <h1>PORTFOLIO</h1>
-    @if(isset($tags)  )
+
+    @if(isset($tags) && is_object($tags))
+        <div id="tabs" >
+          <div class="tab-wrap">
+        @foreach($tags as $tag)
+
+
+                <div  class="tab " id="tab">{{ $tag->name }}</div>
 
 
 
-            <div id="tabs">
+
+        @endforeach
+          </div>
                 @foreach($tags as $tag)
-                <div class="tab first">Hello</div>
+                <div class="tabContent">
+                    <div class="im1"><img src="{{asset('img/'.$tag->images)}}"></div>
+                    <div class="im1"><img src="{{asset('img/'.$tag->images)}}"></div>
+                    <div class="im1"><img src="{{asset('img/'.$tag->images)}}"></div>
+                </div>
                 @endforeach
+
+
+
             </div>
 
     @endif
+
 </div>
 
 
@@ -154,42 +171,44 @@
         {{--</div>--}}
     {{--</div>--}}
 {{--</div>--}}
-<h1>CLIENTS</h1>
-<div class="clients" id="clients">
 
-    <ul>
-        <li><img src="">iPHONE</li>
-        <li><img src="">ANDROID</li>
-        <li><img src="">SAMSUNG</li>
-        <li><img src="">MICROSOFT</li>
-    </ul>
-</div>
 <div class="team" id="team">
-    <h1>TEAM</h1>
-    <p>Lorem ipsum dolor sit amet, per ei tamquam suavitate neglegentur</p>
-    <div class="team-img">
 
-        <div class="ser2">
-            <div class=" "><img src="{{asset('img/p2.jpg')}}"></div>
-            <h3>APPLE IOS</h3>
-            <p> Lorem ipsum dolor sit amet, per ei tamquam suavitate neglegentur,
-                ut duo fugit adipiscing assueverit. Perpetua appellantur ne vim,
-                est in harum intellegat.</p>
-        </div>
-        <div class="ser2">
-            <div class=" "><img src="{{asset('img/p1.jpg')}}"></div>
-            <h3>APPLE IOS</h3>
-            <p> Lorem ipsum dolor sit amet, per ei tamquam suavitate neglegentur,
-                ut duo fugit adipiscing assueverit. Perpetua appellantur ne vim,
-                est in harum intellegat.</p>
-        </div>
-        <div class="ser2">
-            <div class=" "><img src="{{asset('img/p2.jpg')}}"></div>
-            <h3>APPLE IOS</h3>
-            <p> Lorem ipsum dolor sit amet, per ei tamquam suavitate neglegentur,
-                ut duo fugit adipiscing assueverit. Perpetua appellantur ne vim,
-                est in harum intellegat.</p>
-        </div>
+    <h1>TEAM</h1>
+
+    <p>Lorem ipsum dolor sit amet, per ei tamquam suavitate neglegentur</p>
+@if(isset($position) && is_object($position))
+    <div class="team-img">
+     @foreach($position as $pos)
+            <div class="ser2">
+                <div class=" "><img src="{{asset('img/'.$pos->img)}}"></div>
+                <h3>{!! $pos->name !!}</h3>
+                <p> {!! $pos->text !!}</p>
+            </div>
+
+     @endforeach
+@endif
+        {{--<div class="ser2">--}}
+            {{--<div class=" "><img src="{{asset('img/p2.jpg')}}"></div>--}}
+            {{--<h3>APPLE IOS</h3>--}}
+            {{--<p> Lorem ipsum dolor sit amet, per ei tamquam suavitate neglegentur,--}}
+                {{--ut duo fugit adipiscing assueverit. Perpetua appellantur ne vim,--}}
+                {{--est in harum intellegat.</p>--}}
+        {{--</div>--}}
+        {{--<div class="ser2">--}}
+            {{--<div class=" "><img src="{{asset('img/p1.jpg')}}"></div>--}}
+            {{--<h3>APPLE IOS</h3>--}}
+            {{--<p> Lorem ipsum dolor sit amet, per ei tamquam suavitate neglegentur,--}}
+                {{--ut duo fugit adipiscing assueverit. Perpetua appellantur ne vim,--}}
+                {{--est in harum intellegat.</p>--}}
+        {{--</div>--}}
+        {{--<div class="ser2">--}}
+            {{--<div class=" "><img src="{{asset('img/p2.jpg')}}"></div>--}}
+            {{--<h3>APPLE IOS</h3>--}}
+            {{--<p> Lorem ipsum dolor sit amet, per ei tamquam suavitate neglegentur,--}}
+                {{--ut duo fugit adipiscing assueverit. Perpetua appellantur ne vim,--}}
+                {{--est in harum intellegat.</p>--}}
+        {{--</div>--}}
 
     </div>
 
