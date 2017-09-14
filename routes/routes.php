@@ -23,16 +23,19 @@
 
 
 //It's make controller TIm
-//Route::match(['GET','POST'],'/tim',['uses'=>'TimController@index','as'=>'tim']);
+//Route::match(['GET','POST'],'/',['uses'=>'TimController@index','as'=>'tim']);
+//Route::match(['GET','POST'],'/mir',['uses'=>'MirController@execute','as'=>'mir']);
 
-//Route::group(['middleware'>'web'], function(){
+Route::group(['middleware'>['web']], function(){
+
+   Route::match(['GET','POST'],'/',['uses'=>'IndexController@execute','as'=>'home']);
+    Route::get('/page/{alias}',['uses'=>'PageController@execute','as'=>'page']);
+    //auth
+    Route::auth('');
+});
+
 //
-//    Route::match(['GET','POST'],'/',['uses'=>'IndexController@execute','as'=>'home']);
-//    Route::get('/page/{alias}',['uses'=>'PageController@execute','as'=>'page']);
-//    //auth
-//    Route::auth('');
-//});
-Route::match(['GET','POST'],'/',['uses'=>'IndexController@execute','as'=>'home']);
+//Route::match(['get','post'],'/',['uses'=>'IndexController@execute','as'=>'home']);
 ////admin/pages/portfolios/services
 //Route::group(['prefix'>'admin','middleware'=>'auth'], function(){
 //    //admin

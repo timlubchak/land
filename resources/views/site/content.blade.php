@@ -137,9 +137,9 @@
     <h1>CONTACT US</h1>
 
     <form  action="{{ route('home') }}" method="post">
-        <input  type="text"   name="name" >
-        <input  type="submit"  name="submit" >
-        <input type="hidden" class="inp-btn" id="btn-1" name="_token" value="{{ csrf_token() }}">
+        Имя:  <input type="text" name="name" /><br />
+        <input  type="submit"  name="submit" />
+        {{--<input type="hidden" class="inp-btn" id="btn-1" name="_token" value="{{ csrf_token() }}">--}}
         {{ csrf_field() }}
 
 
