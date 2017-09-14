@@ -112,66 +112,6 @@
 
 </div>
 
-
-
-    {{--<div id="tabs">--}}
-        {{--<div class="tab first">ALL</div>--}}
-        {{--<div class="tab">PROTOTYPE</div>--}}
-        {{--<div class="tab">DESIGN</div>--}}
-        {{--<div class="tab ">ANDROID</div>--}}
-        {{--<div class="tab">APPLE IOS</div>--}}
-        {{--<div class="tab">WEB-APP</div>--}}
-        {{--<div class="tabContent">--}}
-            {{--<div class="im1"><img src="{{asset('img/p1.jpg')}}"></div>--}}
-            {{--<div class="im1"><img src="{{asset('img/p2.jpg')}}"></div>--}}
-            {{--<div class="im1"><img src="{{asset('img/p1.jpg')}}"></div>--}}
-            {{--<div class="im1"><img src="{{asset('img/p2.jpg')}}"></div>--}}
-            {{--<div class="im1"><img src="{{asset('img/p2.jpg')}}"></div>--}}
-            {{--<div class="im1"><img src="{{asset('img/p1.jpg')}}"></div>--}}
-            {{--<div class="im1"><img src="{{asset('img/p2.jpg')}}"></div>--}}
-            {{--<div class="im1"><img src="{{asset('img/p1.jpg')}}"></div>--}}
-        {{--</div>--}}
-        {{--<div class="tabContent">--}}
-            {{--<div class="im1"><img src="{{asset('img/p1.jpg')}}"></div>--}}
-            {{--<div class="im1"><img src="{{asset('img/p2.jpg')}}"></div>--}}
-            {{--<div class="im1"><img src="{{asset('img/p1.jpg')}}"></div>--}}
-            {{--<div class="im1"><img src="{{asset('img/p2.jpg')}}"></div>--}}
-        {{--</div>--}}
-        {{--<div class="tabContent">--}}
-            {{--<div class="im1"><img src="{{asset('img/p1.jpg')}}"></div>--}}
-            {{--<div class="im1"><img src="{{asset('img/p2.jpg')}}"></div>--}}
-            {{--<div class="im1"><img src="{{asset('img/p1.jpg')}}"></div>--}}
-            {{--<div class="im1"><img src="{{asset('img/p2.jpg')}}"></div>--}}
-        {{--</div>--}}
-        {{--<div class="tabContent">--}}
-            {{--<div class="im1"><img src="{{asset('img/p1.jpg')}}"></div>--}}
-            {{--<div class="im1"><img src="{{asset('img/p2.jpg')}}"></div>--}}
-            {{--<div class="im1"><img src="{{asset('img/p1.jpg')}}"></div>--}}
-            {{--<div class="im1"><img src="{{asset('img/p2.jpg')}}"></div>--}}
-            {{--<div class="im1"><img src="{{asset('img/p2.jpg')}}"></div>--}}
-            {{--<div class="im1"><img src="{{asset('img/p1.jpg')}}"></div>--}}
-            {{--<div class="im1"><img src="{{asset('img/p2.jpg')}}"></div>--}}
-            {{--<div class="im1"><img src="{{asset('img/p1.jpg')}}"></div>--}}
-        {{--</div>--}}
-        {{--<div class="tabContent">--}}
-            {{--<div class="im1"><img src="{{asset('img/p1.jpg')}}"></div>--}}
-            {{--<div class="im1"><img src="{{asset('img/p2.jpg')}}"></div>--}}
-            {{--<div class="im1"><img src="{{asset('img/p1.jpg')}}"></div>--}}
-            {{--<div class="im1"><img src="{{asset('img/p2.jpg')}}"></div>--}}
-        {{--</div>--}}
-        {{--<div class="tabContent">--}}
-            {{--<div class="im1"><img src="{{asset('img/p1.jpg')}}"></div>--}}
-            {{--<div class="im1"><img src="{{asset('img/p2.jpg')}}"></div>--}}
-            {{--<div class="im1"><img src="{{asset('img/p1.jpg')}}"></div>--}}
-            {{--<div class="im1"><img src="{{asset('img/p2.jpg')}}"></div>--}}
-            {{--<div class="im1"><img src="{{asset('img/p2.jpg')}}"></div>--}}
-            {{--<div class="im1"><img src="{{asset('img/p1.jpg')}}"></div>--}}
-            {{--<div class="im1"><img src="{{asset('img/p2.jpg')}}"></div>--}}
-            {{--<div class="im1"><img src="{{asset('img/p1.jpg')}}"></div>--}}
-        {{--</div>--}}
-    {{--</div>--}}
-{{--</div>--}}
-
 <div class="team" id="team">
 
     <h1>TEAM</h1>
@@ -188,37 +128,20 @@
 
      @endforeach
 @endif
-        {{--<div class="ser2">--}}
-            {{--<div class=" "><img src="{{asset('img/p2.jpg')}}"></div>--}}
-            {{--<h3>APPLE IOS</h3>--}}
-            {{--<p> Lorem ipsum dolor sit amet, per ei tamquam suavitate neglegentur,--}}
-                {{--ut duo fugit adipiscing assueverit. Perpetua appellantur ne vim,--}}
-                {{--est in harum intellegat.</p>--}}
-        {{--</div>--}}
-        {{--<div class="ser2">--}}
-            {{--<div class=" "><img src="{{asset('img/p1.jpg')}}"></div>--}}
-            {{--<h3>APPLE IOS</h3>--}}
-            {{--<p> Lorem ipsum dolor sit amet, per ei tamquam suavitate neglegentur,--}}
-                {{--ut duo fugit adipiscing assueverit. Perpetua appellantur ne vim,--}}
-                {{--est in harum intellegat.</p>--}}
-        {{--</div>--}}
-        {{--<div class="ser2">--}}
-            {{--<div class=" "><img src="{{asset('img/p2.jpg')}}"></div>--}}
-            {{--<h3>APPLE IOS</h3>--}}
-            {{--<p> Lorem ipsum dolor sit amet, per ei tamquam suavitate neglegentur,--}}
-                {{--ut duo fugit adipiscing assueverit. Perpetua appellantur ne vim,--}}
-                {{--est in harum intellegat.</p>--}}
-        {{--</div>--}}
+
 
     </div>
 
 </div>
-<div class="contact-us" id="contact">
+<div class="contact-us" id="contact" >
     <h1>CONTACT US</h1>
-    <form class="form">
-        <input type="text" name="name" placeholder="name.."><br><br>
-        <input type="email" name="email" id="email" placeholder="email.."><br><br>
-        <input type="textarea" name="textarea" id="textarea" placeholder="messanger..."><br><br>
-        <input type="submit" id="btn-1" value="sand">
+
+    <form  action="{{ route('home') }}" method="post">
+        <input  type="text"   name="name" >
+        <input  type="submit"  name="submit" >
+        <input type="hidden" class="inp-btn" id="btn-1" name="_token" value="{{ csrf_token() }}">
+        {{ csrf_field() }}
+
+
     </form>
 </div>

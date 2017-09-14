@@ -276,7 +276,7 @@ h1{
  /*--------------------team-------------------*/
 .team{
     background: #fff;
-    padding: 20px 40px;
+    padding: 0 278px;
     height: 500px;
 }
 p{
@@ -327,7 +327,7 @@ input[type=email]{
     border: none;
     border-radius: 6px;
 }
-input[type=textarea]{
+input[type=text-input]{
     font-size: 25px;
     padding: 8px 89px;
     color: lightblue;

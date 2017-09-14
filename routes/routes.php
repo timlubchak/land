@@ -19,15 +19,20 @@
 //    return view('layouts.index');
 //});
 
-Route::match(['get','post'],'/',['uses'=>'IndexController@execute','as'=>'home']);
+//Route::match(['get','post'],'/',['uses'=>'IndexController@execute','as'=>'home']);
+
+
+//It's make controller TIm
+//Route::match(['GET','POST'],'/tim',['uses'=>'TimController@index','as'=>'tim']);
 
 //Route::group(['middleware'>'web'], function(){
 //
-//    Route::match(['get','post'],'/',['uses'=>'IndexController@execute','as'=>'home']);
+//    Route::match(['GET','POST'],'/',['uses'=>'IndexController@execute','as'=>'home']);
 //    Route::get('/page/{alias}',['uses'=>'PageController@execute','as'=>'page']);
 //    //auth
 //    Route::auth('');
 //});
+Route::match(['GET','POST'],'/',['uses'=>'IndexController@execute','as'=>'home']);
 ////admin/pages/portfolios/services
 //Route::group(['prefix'>'admin','middleware'=>'auth'], function(){
 //    //admin
